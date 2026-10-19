@@ -1,3 +1,6 @@
+# Install dependencies in a terminal with: 
+# python -m pip install pandas numpy matplotlib seaborn scikit-learn scipy
+
 # =====================================================================================
 # %% PRACTICAL 1: Data Manipulation in Python using Pandas
 # Add rows/columns, drop rows/columns, rename rows/columns

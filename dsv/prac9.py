@@ -105,18 +105,6 @@ show_gate(nand_model, X_gate, y_nand, "NAND")
 plot_predictions(and_model, X_gate, "AND Gate Predictions")
 plot_predictions(nand_model, X_gate, "NAND Gate Predictions")
 
-# %% PRACTICAL 10: OR / NOR gate using FFNN
-print("\n===== PRACTICAL 10: OR / NOR gate =====")
-y_or = np.array([[0], [1], [1], [1]])         # OR gate outputs
-y_nor = np.array([[1], [0], [0], [0]])        # NOR gate outputs
-
-or_model = create_and_train_model(X_gate, y_or)
-nor_model = create_and_train_model(X_gate, y_nor)
-show_gate(or_model, X_gate, y_or, "OR")
-show_gate(nor_model, X_gate, y_nor, "NOR")
-plot_predictions(or_model, X_gate, "OR Gate Predictions")
-plot_predictions(nor_model, X_gate, "NOR Gate Predictions")
-
 
 
 

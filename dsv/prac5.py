@@ -1,3 +1,32 @@
+"""pip install pandas numpy matplotlib seaborn scikit-learn scipy"""
+
+import os
+import urllib.request
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+URLS = {
+    "diabetes.csv": "https://raw.githubusercontent.com/plotly/datasets/master/diabetes.csv",
+    "titanic.csv": "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv",
+}
+
+
+def get_csv(*names):
+    """Return the first existing file from names; otherwise download the first one that has a URL."""
+    for n in names:
+        if os.path.exists(n):
+            return n
+    for n in names:
+        if n in URLS:
+            print(f"[{n} not found - downloading]")
+            urllib.request.urlretrieve(URLS[n], n)
+            return n
+    raise FileNotFoundError(f"Put one of {names} in this folder")
+
+
 # =====================================================================================
 # %% PRACTICAL 5: Exploratory Data Analysis (EDA) on the Titanic dataset using Seaborn
 # =====================================================================================
