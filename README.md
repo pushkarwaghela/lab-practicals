@@ -8,7 +8,6 @@ Amrutvahini College of Engineering, Sangamner - SPPU 2019 course, Semester VII (
 | `dsv/` | `DSV_Practicals_1_to_10.py` - all 10 Data Science & Visualization practicals (one `# %%` cell each) |
 | `iot/arduino/` | Arduino sketches for Experiments 1-6 (open each `.ino` in the Arduino IDE) |
 | `iot/raspberrypi/` | Python scripts for Experiments 8-11 |
-| `docs/` | Study guides (steps, wiring, theory, viva questions) as PDF |
 
 ## DSV quick start
 ```bash
